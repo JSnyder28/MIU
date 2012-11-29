@@ -1,6 +1,6 @@
 // Joshua Snyder
-// VFW 1211
-// Project 3
+// MIU 1212
+// Project 1
 
 // Wait until the DOM is ready.
 window.addEventListener("DOMContentLoaded", function() {

@@ -10,7 +10,7 @@ Project 1
 
 h1 {
     font: 3.0em "Brush Script MT", cursive;
-    color: white;
+    color: red;
     text-shadow: 3px 3px 1px rgba(0, 0, 0, 0.5 );
     margin: 20px;
 }
@@ -57,19 +57,19 @@ fieldset {
 
 #clearAll {
     font: 1.1em "Brush Script MT", cursive;
-    color: white;
+    color: red;
     margin-left: 2px; 
     margin-right: 10px;
 }
 
 #viewLink {
     font: 1.1em "Brush Script MT", cursive;
-    color: white;
+    color: red;
 }
 
 #addRcp {
     font: 1.1em "Brush Script MT", cursive;
-    color: white;
+    color: red;
 }
 
 #items > ul > li {
