@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<!-- Joshua Snyder -->
+<!-- MIU 1212 -->
+<!-- Project 3 -->
+<!DOCTYPE html> 
+<html> 
+<head> 
+	<title>Recipes!</title> 
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+
+	<!-- Stylesheets -->
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.css" />
+	<!-- <link rel="stylesheet" href="css/style.css"  /> -->
+
+	<!-- Modernizr script -->
+	<script src="js/libs/modernizr.custom.min.js"></script>
+
+</head> 
+<body> 
+
+	<div data-role="page" id="home">
+		<div data-role="header" data-position="fixed" data-theme="b">
+			<a href="addItem.html" data-icon="plus" data-theme="e">New</a><h1>Recipes!</h1><a href="#info" data-icon="info" data-theme="e">Info</a>
+		</div><!-- /header -->
+		
+		<div data-role="content">			
+			<div>
+				<label for="img-CTA">Need a Recipe Idea?</label>
+				<img src="img/clam_chowder_soup.jpg" id="img-CTA">
+			</div><!-- /CTA Image -->
+
+			<h3>Browse a Category:</h3>
+			<ul data-role="listview" data-inset="true" data-filter="true" data-theme="e">
+				<li><a href="#american">American</a></li>
+				<li><a href="#chinese">Chinese</a></li>
+				<li><a href="#italian">Italian</a></li>
+				<li><a href="#japanese">Japanese</a></li>
+				<li><a href="#mexican">Mexican</a></li>
+				<li><a href="#seasonal">Seasonal</a></li>
+			</ul><!-- Category Links -->
+		</div><!-- /content -->
+
+		<div data-role="footer" data-position="fixed" data-theme="b" data-id="home">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#home" class="ui-btn-active">Home</a></li>
+					<li><a href="http://jsnyder28.github.com/MIU/Projects/snyder_joshua_project3/Bronze/index.html">Bronze</a></li>
+					<li><a href="https://github.com/JSnyder28/MIU.git">Github</a></li>
+				</ul>
+			</div><!-- /navbar -->
+		</div><!-- /footer -->
+
+	</div><!-- /page -->
+
+	<!-- <div data-role="page" id="newRcp" data-add-back-btn="true">
+
+		<div data-role="header" data-position="fixed" data-theme="b">
+			<h1>New Recipe!</h1>
+		</div><!-- /header 
+
+		<div data-role="content">
+			<p>Add Recipe form will be here</p>
+		</div><!-- /content 
+		<div data-role="footer" data-position="fixed" data-theme="b" data-id="newRcp">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#home">Home</a></li>
+					<li><a href="http://jsnyder28.github.com/MIU/Projects/snyder_joshua_project3/Bronze/index.html">Bronze</a></li>
+					<li><a href="https://github.com/JSnyder28/MIU.git">Github</a></li>
+				</ul>
+			</div><!-- /navbar 
+		</div><!-- /footer 
+
+	</div><!-- /Add recipe page -->
+
+	<div data-role="page" id="american" data-add-back-btn="true">
+		<div data-role="header" data-position="fixed" data-theme="b">
+			<h1>American</h1>
+		</div><!-- /header -->
+		<div data-role="content">
+			<div class="ui-grid-c">
+				<img src="img/chcicken_strips.jpg" id="img-chicken_strips">
+				<img src="img/steak.jpg" id="img-steak"><a href="#">Grilled Porterhouse Steak with Paprika-Parmesan Butter</a>
+				<img src="img/chicken_fried.jpg" id="img-chicken_fried"><a href="#">Texas on a Half shell Chicken Fired Steak</a>
+				<img src="img/pot_roast.jpg" id="img-pot_roast"><a href="#">Pot Roast with Vegtables</a>
+				<img src="img/chili_dog.jpg" id="img-chili_dog"><a href="#">Jalapeno Chili Dog</a>
+			</div>
+		</div><!-- /content -->
+		<div data-role="footer" data-position="fixed" data-theme="b" data-id="home">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#home">Home</a></li>
+					<li><a href="http://jsnyder28.github.com/MIU/Projects/snyder_joshua_project3/Bronze/index.html">Bronze</a></li>
+					<li><a href="https://github.com/JSnyder28/MIU.git">Github</a></li>
+				</ul>
+			</div><!-- /navbar -->
+		</div><!-- /footer -->
+
+	</div><!-- /American category page -->
+
+	<div data-role="page" id="chinese" data-add-back-btn="true">
+		<div data-role="header" data-position="fixed" data-theme="b">
+			<h1>Chinese</h1>
+		</div><!-- /header -->
+		<div data-role="content">
+			<img src="img/Chinese.png"><p>Chinese Recipes live here</p>
+		</div><!-- /content -->
+		<div data-role="footer" data-position="fixed" data-theme="b" data-id="home">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#home">Home</a></li>
+					<li><a href="http://jsnyder28.github.com/MIU/Projects/snyder_joshua_project3/Bronze/index.html">Bronze</a></li>
+					<li><a href="https://github.com/JSnyder28/MIU.git">Github</a></li>
+				</ul>
+			</div><!-- /navbar -->
+		</div><!-- /footer -->
+
+	</div><!-- /Chinese category page -->
+
+	<div data-role="page" id="italian" data-add-back-btn="true">
+		<div data-role="header" data-position="fixed" data-theme="b">
+			<h1>Italian</h1>
+		</div><!-- /header -->
+		<div data-role="content">
+			<img src="img/Italian.png"><p>Italian Recipes live here</p>
+		</div><!-- /content -->
+		<div data-role="footer" data-position="fixed" data-theme="b" data-id="home">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#home">Home</a></li>
+					<li><a href="http://jsnyder28.github.com/MIU/Projects/snyder_joshua_project3/Bronze/index.html">Bronze</a></li>
+					<li><a href="https://github.com/JSnyder28/MIU.git">Github</a></li>
+				</ul>
+			</div><!-- /navbar -->
+		</div><!-- /footer -->
+
+	</div><!-- /Italian category page -->
+
+	<div data-role="page" id="japanese" data-add-back-btn="true">
+		<div data-role="header" data-position="fixed" data-theme="b">
+			<h1>Japanese</h1>
+		</div><!-- /header -->
+		<div data-role="content">
+			<img src="img/Japanese.png"><p>Japanese Recipes live here</p>
+		</div><!-- /content -->
+		<div data-role="footer" data-position="fixed" data-theme="b" data-id="home">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#home">Home</a></li>
+					<li><a href="http://jsnyder28.github.com/MIU/Projects/snyder_joshua_project3/Bronze/index.html">Bronze</a></li>
+					<li><a href="https://github.com/JSnyder28/MIU.git">Github</a></li>
+				</ul>
+			</div><!-- /navbar -->
+		</div><!-- /footer -->
+
+	</div><!-- /Japanese category page -->
+
+	<div data-role="page" id="mexican" data-add-back-btn="true">
+		<div data-role="header" data-position="fixed" data-theme="b">
+			<h1>Mexican</h1>
+		</div><!-- /header -->
+		<div data-role="content">
+			<img src="img/Mexican.png"><p>Mexican Recipes live here</p>
+		</div><!-- /content -->
+		<div data-role="footer" data-position="fixed" data-theme="b" data-id="home">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#home">Home</a></li>
+					<li><a href="http://jsnyder28.github.com/MIU/Projects/snyder_joshua_project3/Bronze/index.html">Bronze</a></li>
+					<li><a href="https://github.com/JSnyder28/MIU.git">Github</a></li>
+				</ul>
+			</div><!-- /navbar -->
+		</div><!-- /footer -->
+
+	</div><!-- /Mexican category page -->
+
+	<div data-role="page" id="seasonal" data-add-back-btn="true">
+		<div data-role="header" data-position="fixed" data-theme="b">
+			<h1>Seasonal</h1>
+		</div><!-- /header -->
+		<div data-role="content">
+			<img src="img/Seasonal.png"><p>Seasonal Recipes live here</p>
+		</div><!-- /content -->
+		<div data-role="footer" data-position="fixed" data-theme="b" data-id="home">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#home">Home</a></li>
+					<li><a href="http://jsnyder28.github.com/MIU/Projects/snyder_joshua_project3/Bronze/index.html">Bronze</a></li>
+					<li><a href="https://github.com/JSnyder28/MIU.git">Github</a></li>
+				</ul>
+			</div><!-- /navbar -->
+		</div><!-- /footer -->
+
+	</div><!-- /Seasonal category page -->
+
+	<div data-role="page" id="info" data-add-back-btn="true">		
+		<div data-role="header" data-position="fixed" data-theme="b">
+			<h1>Info</h1>
+		</div><!-- /header -->
+		<div data-role="content">
+			<p>App information lives here</p>
+		</div><!-- /content -->
+		<div data-role="footer" data-position="fixed" data-theme="b" data-id="home">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#home">Home</a></li>
+					<li><a href="http://jsnyder28.github.com/MIU/Projects/snyder_joshua_project3/Bronze/index.html">Bronze</a></li>
+					<li><a href="https://github.com/JSnyder28/MIU.git">GitHub</a></li>
+				</ul>
+			</div><!-- /navbar -->
+		</div><!-- /footer -->
+
+	</div><!-- /Info page -->
+
+	<!-- Javascript -->
+	<script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>
+	<script src="js/json.js" type="text/javascript"></script>
+	<script src="js/main.js" type="text/javascript"></script>
+
+</body>
+</html>
