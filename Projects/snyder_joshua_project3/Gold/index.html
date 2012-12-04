@@ -20,7 +20,7 @@
 
 	<div data-role="page" id="home">
 		<div data-role="header" data-position="fixed" data-theme="b">
-			<a href="addItem.html" data-icon="plus" data-theme="e">New</a><h1>Recipes!</h1><a href="#info" data-icon="info" data-theme="e">Info</a>
+			<a href="#newRcp" data-icon="plus" data-theme="e">New</a><h1>Recipes!</h1><a href="#info" data-icon="info" data-theme="e">Info</a>
 		</div><!-- /header -->
 		
 		<div data-role="content">			
@@ -52,26 +52,74 @@
 
 	</div><!-- /page -->
 
-	<!-- <div data-role="page" id="newRcp" data-add-back-btn="true">
-
+	<!-- Page -->
+	<div data-role="page" id="newRcp" data-add-back-btn="true">
 		<div data-role="header" data-position="fixed" data-theme="b">
 			<h1>New Recipe!</h1>
-		</div><!-- /header 
+		</div><!-- /header -->
 
 		<div data-role="content">
-			<p>Add Recipe form will be here</p>
-		</div><!-- /content 
-		<div data-role="footer" data-position="fixed" data-theme="b" data-id="newRcp">
+			<!-- Form -->
+			<form action="#" method="post" id="newRcpForm">				
+				<div id="select">
+					<label for="select-choice-1" class="select">Categories:</label>
+					<select name="select-choice-1" id="select-choice-1">
+						<option value="chooseCat">-- Choose A Category --</option>
+						<option value="american">American</option>
+						<option value="chinese">Chinese</option>
+						<option value="italian">Italian</option>
+						<option value="japanese">Japanese</option>
+						<option value="mexican">Mexican</option>
+						<option value="seasonal">Seasonal</option>
+					</select>
+				</div><!-- /select -->
+				<div id="input-date">
+					<label for="date-added">Date Added:</label>
+					<input type="date" name="date" id="date-added" value="" />
+				</div><!-- /date -->
+				<div id="input-basicTxt">
+					<label for="basicTxt">Recipe Name:</label>
+					<input type="text" name="name" id="basicTxt" value="" />
+				</div><!-- /basic text input -->
+				<div id="txtArea-a">
+					<label for="txtArea-a">Ingredients:</label>
+					<textarea name="textarea-ingredients" id="txtArea-a">
+					</textarea>
+				</div><!-- /text area-a input -->
+				<div id="txtArea-b">
+					<label for="txtArea-b">Directions:</label>
+					<textarea name="textarea-directions" id="txtArea-b">
+					</textarea>
+				</div><!-- /text area-b input -->
+				<div id="slider">
+					<label for="slider">Rate it:</label>
+					<input type="range" name="slider" id="slider" value="0" min="0" max="5" />
+				</div><!-- /slider -->
+				<div data-role="fieldcontain" id="checkbox">
+					<fieldset data-role="controlgroup">
+						<legend>Go-To Meal?</legend>
+						<input type="checkbox" name="checkbox-1" id="checkbox-1" class="custom" />
+						<label for="checkbox-1">Yes</label>
+					</fieldset>
+				</div><!-- /checkbox -->
+				<div id="button-submit">
+					<input type="submit" value="Add Recipe!" />
+				</div><!-- /submit button -->
+			</form>
+			<!-- /form -->
+		</div><!-- /content -->
+
+		<div data-role="footer" data-position="fixed" data-theme="b" data-id="home">
 			<div data-role="navbar">
 				<ul>
 					<li><a href="#home">Home</a></li>
 					<li><a href="http://jsnyder28.github.com/MIU/Projects/snyder_joshua_project3/Bronze/index.html">Bronze</a></li>
 					<li><a href="https://github.com/JSnyder28/MIU.git">Github</a></li>
 				</ul>
-			</div><!-- /navbar 
-		</div><!-- /footer 
-
-	</div><!-- /Add recipe page -->
+			</div><!-- /navbar -->
+		</div><!-- /footer -->
+	</div>
+	<!-- /Add recipe page -->
 
 	<div data-role="page" id="american" data-add-back-btn="true">
 		<div data-role="header" data-position="fixed" data-theme="b">
@@ -216,7 +264,7 @@
 	<script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
 	<script src="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>
 	<script src="js/json.js" type="text/javascript"></script>
-	<script src="js/main.js" type="text/javascript"></script>
+	<!-- <script src="js/main.js" type="text/javascript"></script> -->
 
 </body>
 </html>
