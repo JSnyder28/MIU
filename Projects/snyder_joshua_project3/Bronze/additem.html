@@ -18,27 +18,29 @@
         <header>
             <h1 id="formHead">Add Recipe!</h1>
         </header>
-        <nav id="search">
-            <input type="text" id="searchField" /><input type="button" value="Search" id="searchButton" />
-        </nav>
         <form action="#" method="post" id="addRcpForm">
+            <div>
+                <input type="button" value="Add It!" id="addIt" />
+            </div><!-- /submit button -->
             <fieldset>
                 <legend>Recipe</legend>
+                <div>
+                    <p>*Required</p>
+                </div>
                 <ul id="errors"></ul>
                 <ul id="catSelect">
                   <li id="select">
-                    <label for="category">Food Category:</label>
+                    <label for="category">*Food Category:</label>
                   </li>
                 </ul>
                 <ul id="rcpInfo">
                     <li><label for="dateAdded">Date Added:</label><input type="date" id="dateAdded" /></li>
-                    <li><label for="rcpName">Recipe Name:</label><input type="text" id="rcpName" /></li>
-                    <li><label for="directions">Directions:</label><textarea id="directions"></textarea></li>
+                    <li><label for="rcpName">*Recipe Name:</label><input type="text" id="rcpName" /></li>
+                    <li><label for="directions">*Directions:</label><textarea id="directions"></textarea></li>
                     <li><label for="goToMeal">Go-To-Meal:</label><input type="checkbox" id="goToMeal" value="Yes" class="checkbox" /></li>
                     <li><label for="rating">Rate It?</label><input type="range" min="1" max="5" id="rating" /></li>
                     <li><input type="text" id="ratingDis" /></li>
                 </ul>
-                <input type="button" value="Add It!" id="addIt" />
             </fieldset>
         </form>
         <nav>
