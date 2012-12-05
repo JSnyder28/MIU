@@ -4,9 +4,20 @@ $('#home').on('pageinit', function(){
 		
 $('#addItem').on('pageinit', function(){
 
-		var myForm = $('#formId');
-		    myForm.validate({
+		var myForm = $('#newRcpForm'),
+			formErrorLink = $('#errorsLink');
+
+		    myForm.validate({			
 			invalidHandler: function(form, validator) {
+				formErrorLink.click();
+				var html = '';
+				for (var key in validator.submitted) {
+					var label = $('label[for^="'+ key +'"]').not('[generated]')
+					var legend = label.closest('fieldset').find('select-ui')
+					var fieldName = legend.length ? legend.text() : label.text();
+					html += '<li>'+ fieldName +'</li>';
+				};
+				$('#errors ul').html(html);
 			},
 			submitHandler: function() {
 		var data = myForm.serializeArray();
