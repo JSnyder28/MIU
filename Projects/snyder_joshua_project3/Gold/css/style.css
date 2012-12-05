@@ -10,6 +10,10 @@ label.error {
     color: red;
 }
 
+#reqLinks {
+    list-style-type: none;
+}
+
 #errorsLink {
     display: none;
 }

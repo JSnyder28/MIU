@@ -63,8 +63,6 @@
 		<div data-role="content">
 			<!-- Form -->
 			<form action="" method="" id="newRcpForm">
-				<fieldset>
-					<legend>*Required Fields</legend>		
 					<div data-role="fieldcontain" id="select">
 						<label for="select-choice-1" class="select">Categories:</label>
 						<select name="select-choice-1" id="select-choice-1">
@@ -112,7 +110,6 @@
 					</div><!-- /submit button -->
 
 					<a href="#errors" id="errorsLink" data-rel="dialog" data-transition="pop">Errors</a>
-				</fieldset>
 			</form><!-- /form -->
 		</div><!-- /content -->
 
@@ -255,14 +252,15 @@
 			<h1>Info</h1>
 		</div><!-- /header -->
 		<div data-role="content">
-			<p>App information lives here</p>
+			<ul id="reqLinks">
+				<li><a href="https://github.com/JSnyder28/MIU.git">GitHub</a></li>
+				<li><a href="http://jsnyder28.github.com/MIU/Projects/snyder_joshua_project3/Bronze/index.html">Bronze App</a></li>
+			</ul>
 		</div><!-- /content -->
 		<div data-role="footer" data-position="fixed" data-theme="b" data-id="home">
 			<div data-role="navbar">
-				<ul>
-					<li><a href="#home">Home</a></li>
-					<li><a href="http://jsnyder28.github.com/MIU/Projects/snyder_joshua_project3/Bronze/index.html">Bronze</a></li>
-					<li><a href="https://github.com/JSnyder28/MIU.git">GitHub</a></li>
+				<ul>					
+					<li><a href="#home" data-icon="home">Home</a></li>
 				</ul>
 			</div><!-- /navbar -->
 		</div><!-- /footer -->
