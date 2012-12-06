@@ -25,30 +25,28 @@
 		</div><!-- /header -->
 		
 		<div data-role="content">			
-			<div>
+			<div data-role="fieldcontain">
 				<label for="img-CTA">Need a Recipe Idea?</label>
 				<img src="img/clam_chowder_soup.jpg" id="img-CTA">
 			</div><!-- /CTA Image -->
 
-			<h3>Browse a Category:</h3>
-			<ul data-role="listview" data-inset="true" data-filter="true" data-theme="e">
-				<li><a href="#american">American</a></li>
-				<li><a href="#chinese">Chinese</a></li>
-				<li><a href="#italian">Italian</a></li>
-				<li><a href="#japanese">Japanese</a></li>
-				<li><a href="#mexican">Mexican</a></li>
-				<li><a href="#seasonal">Seasonal</a></li>
-			</ul><!-- Category Links -->
+				<h3>Browse a Category:</h3>
+				<ul data-role="listview" data-inset="true" data-filter="true" data-theme="e">
+					<li><a href="#american">American</a></li>
+					<li><a href="#chinese">Chinese</a></li>
+					<li><a href="#italian">Italian</a></li>
+					<li><a href="#japanese">Japanese</a></li>
+					<li><a href="#mexican">Mexican</a></li>
+					<li><a href="#seasonal">Seasonal</a></li>
+				</ul><!-- Category Links -->
 		</div><!-- /content -->
 
 		<div data-role="footer" data-position="fixed" data-theme="b" data-id="home">
 			<div data-role="navbar">
 				<ul>
-					<li><a href="#home" class="ui-btn-active">Home</a></li>
-					<li><a href="#addItem">New</a></li>
-					<li><a href="#info">Info</a></li>
-					<li><a href="http://jsnyder28.github.com/MIU/Projects/snyder_joshua_project3/Bronze/index.html">Bronze</a></li>
-					<li><a href="https://github.com/JSnyder28/MIU.git">Github</a></li>
+					<li><a href="#home" data-icon="home" class="ui-btn-active">Home</a></li>
+					<li><a href="additem.html" data-rel="external" data-icon="plus">Recipe</a></li>
+					<li><a href="#info" data-icon="info">Info</a></li>
 				</ul>
 			</div><!-- /navbar -->
 		</div><!-- /footer -->
@@ -112,10 +110,12 @@
 			</form>
 			<!-- /form -->
 			<form action="" method="" id="newRcpForm">
+				<fieldset>
+					<legend>*Required Fields</legend>		
 					<div data-role="fieldcontain" id="select">
 						<label for="select-choice-1" class="select">Categories:</label>
 						<select name="select-choice-1" id="select-choice-1">
-							<option data-placeholder="true" value="chooseCat">Choose A Category</option>
+							<option data-placeholder="true" value="chooseAcategory">Choose A Category</option>
 							<option value="american">American</option>
 							<option value="chinese">Chinese</option>
 							<option value="italian">Italian</option>
@@ -159,42 +159,48 @@
 					</div><!-- /submit button -->
 
 					<a href="#errors" id="errorsLink" data-rel="dialog" data-transition="pop">Errors</a>
+				</fieldset>
 			</form><!-- /form -->
 		</div><!-- /content -->
 
 		<div data-role="footer" data-position="fixed" data-theme="b" data-id="home">
 			<div data-role="navbar">
 				<ul>
-					<li><a href="#home">Home</a></li>
-					<li><a href="#newRcp" class="ui-btn-active">New</a></li>
-					<li><a href="#info">Info</a></li>
-					<li><a href="http://jsnyder28.github.com/MIU/Projects/snyder_joshua_project3/Bronze/index.html">Bronze</a></li>
-					<li><a href="https://github.com/JSnyder28/MIU.git">Github</a></li>
+					<li><a href="#home" data-icon="home" class="ui-btn-active">Home</a></li>
+					<li><a href="additem.html" data-rel="external" data-icon="plus">Recipe</a></li>
+					<li><a href="#info" data-icon="info">Info</a></li>
 				</ul>
 			</div><!-- /navbar -->
 		</div><!-- /footer -->
-	</div>
-	<!-- /Add recipe page -->
+	</div><!-- /Add recipe page -->
 
 	<div data-role="page" id="american" data-add-back-btn="true">
 		<div data-role="header" data-position="fixed" data-theme="b">
 			<h1>American</h1>
 		</div><!-- /header -->
 		<div data-role="content">
-			<ul>
-				<li><img src="img/chicken_strips.jpg" id="img-chicken_strips"><a href="#">Chicken Strip with Garden Salad</a></li>
-				<li><img src="img/steak.jpg" id="img-steak"><a href="#">Grilled Porterhouse Steak with Paprika-Parmesan Butter</a></li>
-				<li><img src="img/chicken_fried.jpg" id="img-chicken_fried"><a href="#">Texas on a Half shell Chicken Fired Steak</a></li>
-				<li><img src="img/pot_roast.jpg" id="img-pot_roast"><a href="#">Pot Roast with Vegtables</a></li>
-				<li><img src="img/chili_dog.jpg" id="img-chili_dog"><a href="#">Jalapeno Chili Dog</a></li>
-			</ul>
+			<div data-role="fieldcontain">
+				<a href="#"><img src="img/chicken_strips.jpg">Chicken Strip with Garden Salad</a>
+			</div>
+			<div data-role="fieldcontain">
+				<a href="#"><img src="img/steak.jpg">Grilled Porterhouse Steak with Paprika-Parmesan Butter</a>
+			</div>
+			<div data-role="fieldcontain">
+				<a href="#"><img src="img/chili_dog.jpg">Jalapeno Chili Dog</a>
+			</div>
+			<div data-role="fieldcontain">
+				<a href="#"><img src="img/pot_roast.jpg">Pot Roast with Vegtables</a>
+			</div>
+			<div data-role="fieldcontain">
+				<a href="#"><img src="img/chicken_fried.jpg">Texas on a Half shell Chicken Fired Steak</a>
+			</div>
 		</div><!-- /content -->
 		<div data-role="footer" data-position="fixed" data-theme="b" data-id="home">
 			<div data-role="navbar">
 				<ul>
-					<li><a href="#home">Home</a></li>
-					<li><a href="http://jsnyder28.github.com/MIU/Projects/snyder_joshua_project3/Bronze/index.html">Bronze</a></li>
-					<li><a href="https://github.com/JSnyder28/MIU.git">Github</a></li>
+					<li><a href="#home" data-icon="home" class="ui-btn-active">Home</a></li>
+					<li><a href="additem.html" data-rel="external" data-icon="plus">Recipe</a></li>
+					<li><a href="#info" data-icon="info">Info</a></li>
 				</ul>
 			</div><!-- /navbar -->
 		</div><!-- /footer -->
@@ -211,10 +217,9 @@
 		<div data-role="footer" data-position="fixed" data-theme="b" data-id="home">
 			<div data-role="navbar">
 				<ul>
-					<li><a href="#home">Home</a></li>
-					<li><a href="http://jsnyder28.github.com/MIU/Projects/snyder_joshua_project3/Bronze/index.html">Bronze</a></li>
-					<li><a href="https://github.com/JSnyder28/MIU.git">Github</a></li>
-				</ul>
+					<li><a href="#home" data-icon="home" class="ui-btn-active">Home</a></li>
+					<li><a href="additem.html" data-rel="external" data-icon="plus">Recipe</a></li>
+					<li><a href="#info" data-icon="info">Info</a></li>
 			</div><!-- /navbar -->
 		</div><!-- /footer -->
 
@@ -230,9 +235,9 @@
 		<div data-role="footer" data-position="fixed" data-theme="b" data-id="home">
 			<div data-role="navbar">
 				<ul>
-					<li><a href="#home">Home</a></li>
-					<li><a href="http://jsnyder28.github.com/MIU/Projects/snyder_joshua_project3/Bronze/index.html">Bronze</a></li>
-					<li><a href="https://github.com/JSnyder28/MIU.git">Github</a></li>
+					<li><a href="#home" data-icon="home" class="ui-btn-active">Home</a></li>
+					<li><a href="additem.html" data-rel="external" data-icon="plus">Recipe</a></li>
+					<li><a href="#info" data-icon="info">Info</a></li>
 				</ul>
 			</div><!-- /navbar -->
 		</div><!-- /footer -->
@@ -249,9 +254,9 @@
 		<div data-role="footer" data-position="fixed" data-theme="b" data-id="home">
 			<div data-role="navbar">
 				<ul>
-					<li><a href="#home">Home</a></li>
-					<li><a href="http://jsnyder28.github.com/MIU/Projects/snyder_joshua_project3/Bronze/index.html">Bronze</a></li>
-					<li><a href="https://github.com/JSnyder28/MIU.git">Github</a></li>
+					<li><a href="#home" data-icon="home" class="ui-btn-active">Home</a></li>
+					<li><a href="additem.html" data-rel="external" data-icon="plus">Recipe</a></li>
+					<li><a href="#info" data-icon="info">Info</a></li>
 				</ul>
 			</div><!-- /navbar -->
 		</div><!-- /footer -->
@@ -268,9 +273,9 @@
 		<div data-role="footer" data-position="fixed" data-theme="b" data-id="home">
 			<div data-role="navbar">
 				<ul>
-					<li><a href="#home">Home</a></li>
-					<li><a href="http://jsnyder28.github.com/MIU/Projects/snyder_joshua_project3/Bronze/index.html">Bronze</a></li>
-					<li><a href="https://github.com/JSnyder28/MIU.git">Github</a></li>
+					<li><a href="#home" data-icon="home" class="ui-btn-active">Home</a></li>
+					<li><a href="additem.html" data-rel="external" data-icon="plus">Recipe</a></li>
+					<li><a href="#info" data-icon="info">Info</a></li>
 				</ul>
 			</div><!-- /navbar -->
 		</div><!-- /footer -->
@@ -287,9 +292,9 @@
 		<div data-role="footer" data-position="fixed" data-theme="b" data-id="home">
 			<div data-role="navbar">
 				<ul>
-					<li><a href="#home">Home</a></li>
-					<li><a href="http://jsnyder28.github.com/MIU/Projects/snyder_joshua_project3/Bronze/index.html">Bronze</a></li>
-					<li><a href="https://github.com/JSnyder28/MIU.git">Github</a></li>
+					<li><a href="#home" data-icon="home" class="ui-btn-active">Home</a></li>
+					<li><a href="additem.html" data-rel="external" data-icon="plus">Recipe</a></li>
+					<li><a href="#info" data-icon="info">Info</a></li>
 				</ul>
 			</div><!-- /navbar -->
 		</div><!-- /footer -->
@@ -310,6 +315,8 @@
 			<div data-role="navbar">
 				<ul>					
 					<li><a href="#home" data-icon="home">Home</a></li>
+					<li><a href="additem.html" data-rel="external" data-icon="plus">Recipe</a></li>
+					<li><a href="#info" data-icon="info" class="ui-btn-active">Info</a></li>
 				</ul>
 			</div><!-- /navbar -->
 		</div><!-- /footer -->
