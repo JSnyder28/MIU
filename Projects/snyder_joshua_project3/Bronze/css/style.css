@@ -89,5 +89,8 @@ fieldset {
 #addIt {
     font: 1.0em "Arial Black", Gadget, sans-serif;
 }
+
+#reqLinks {
+    list-style-type: none;
 /* index.html page */
 

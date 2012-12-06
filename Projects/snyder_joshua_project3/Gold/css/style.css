@@ -17,3 +17,8 @@ label.error {
 #errorsLink {
     display: none;
 }
+
+/* custom icons */
+.ui-icon-thumb-american {
+    background-image: url("American-44x24.png");
+}
