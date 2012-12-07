@@ -32,10 +32,19 @@ $('#addItem').on('pageinit', function(){
 //The functions below can go inside or outside the pageinit function for the page in which it is needed.
 
 var autofillData = function (){
-	 
+	for (var n in json) {
+		var id = Math.floor(Math.random()*100000001);
+		localStorage.setItem(id, JSON.stringify(json[n]));
+
+	}	 
 };
 
 var getData = function(){
+	if (localStorage.length == 0) {
+		autofillData();
+	}
+
+
 
 };
 
@@ -50,3 +59,5 @@ var	deleteItem = function (){
 var clearLocal = function(){
 
 };
+
+$('#addIt').click(autofillData);
