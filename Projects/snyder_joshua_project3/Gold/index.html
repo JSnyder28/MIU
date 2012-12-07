@@ -60,52 +60,56 @@
 
 		<div data-role="content">
 			<!-- Form -->
-			<form action="#" method="" id="newRcpForm">				
-				<div id="select">
-					<label for="select-choice-1" class="select">Categories:</label>
-					<select name="select-choice-1" id="select-choice-1">
-						<option value="chooseCat">-- Choose A Category --</option>
-						<option value="american">American</option>
-						<option value="chinese">Chinese</option>
-						<option value="italian">Italian</option>
-						<option value="japanese">Japanese</option>
-						<option value="mexican">Mexican</option>
-						<option value="seasonal">Seasonal</option>
-					</select>
-				</div><!-- /select -->
-				<div id="input-date">
-					<label for="date-added">Date Added:</label>
-					<input type="date" name="date" id="date-added" value="" />
-				</div><!-- /date -->
-				<div id="input-basicTxt">
-					<label for="basicTxt">Recipe Name:</label>
-					<input type="text" name="name" id="basicTxt" value="" />
-				</div><!-- /basic text input -->
-				<div id="txtArea-a">
-					<label for="txtArea-a">Ingredients:</label>
-					<textarea name="textarea-ingredients" id="txtArea-a">
-					</textarea>
-				</div><!-- /text area-a input -->
-				<div id="txtArea-b">
-					<label for="txtArea-b">Directions:</label>
-					<textarea name="textarea-directions" id="txtArea-b">
-					</textarea>
-				</div><!-- /text area-b input -->
-				<div id="slider">
-					<label for="slider">Rate it:</label>
-					<input type="range" name="slider" id="slider" value="3" min="0" max="5" />
-				</div><!-- /slider -->
-				<div data-role="fieldcontain" id="checkbox">
-					<fieldset data-role="controlgroup">
-						<legend>Go-To Meal?</legend>
-						<input type="checkbox" name="checkbox-1" id="checkbox-1" class="custom" />
-						<label for="checkbox-1">Yes</label>
-					</fieldset>
-				</div><!-- /checkbox -->
-				<div id="buttons">
-					<input type="submit" value="Add Recipe!" data-theme="b"/>
-					<input type="reset" value="Reset It!" />
-				</div><!-- /submit button -->
+			<form action="#" method="" id="newRcpForm">	
+				<fieldset>
+					<legend>*Required</legend>			
+					<div id="select">
+						<label for="select-choice-1" class="select">Categories:</label>
+						<select name="select-choice-1" id="select-choice-1">
+							<option value="chooseCat">-- Choose A Category --</option>
+							<option value="american">American</option>
+							<option value="chinese">Chinese</option>
+							<option value="italian">Italian</option>
+							<option value="japanese">Japanese</option>
+							<option value="mexican">Mexican</option>
+							<option value="seasonal">Seasonal</option>
+						</select>
+					</div><!-- /select -->
+					<div id="input-date">
+						<label for="date-added">Date Added:</label>
+						<input type="date" name="date" id="date-added" value="" />
+					</div><!-- /date -->
+					<div id="input-basicTxt">
+						<label for="basicTxt">*Recipe Name:</label>
+						<input type="text" name="name" id="basicTxt" value="" class="required"/>
+					</div><!-- /basic text input -->
+					<div id="txtArea-a">
+						<label for="txtArea-a">*Ingredients:</label>
+						<textarea name="textarea-ingredients" id="txtArea-a" class="required">
+						</textarea>
+					</div><!-- /text area-a input -->
+					<div id="txtArea-b">
+						<label for="txtArea-b">*Directions:</label>
+						<textarea name="textarea-directions" id="txtArea-b" class="required">
+						</textarea>
+					</div><!-- /text area-b input -->
+					<div id="slider">
+						<label for="slider">Rate it:</label>
+						<input type="range" name="slider" id="slider" value="3" min="0" max="5" />
+					</div><!-- /slider -->
+					<div data-role="fieldcontain" id="checkbox">
+						<fieldset data-role="controlgroup">
+							<legend>Go-To Meal?</legend>
+							<input type="checkbox" name="checkbox-1" id="checkbox-1" class="custom" />
+							<label for="checkbox-1">Yes</label>
+						</fieldset>
+					</div><!-- /checkbox -->
+					<div id="button-submit">
+						<input type="submit" value="Add Recipe!" data-theme="b"/>
+						<input type="reset" value="Reset It!" />
+					</div><!-- / buttons -->
+					<!-- <a href="#errors" id="errorsLink" data-rel="dialog" data-transition="pop">open errors</a> -->
+				</fieldset>
 			</form>
 			<!-- /form -->
 		</div><!-- /content -->
@@ -270,10 +274,10 @@
 
 	</div><!-- /Info page -->
 
-	<div data-role="dialog" id="errors">
+	<!-- <div data-role="dialog" id="errors">
 		<div data-role="header" data-position="fixed" data-theme="b">
 			<h1>Missing Fields</h1>
-		</div><!-- /header -->
+		</div><!-- /header --
 		
 		<div data-role="content">
 			<ul>
