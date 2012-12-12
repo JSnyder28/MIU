@@ -1,209 +1,229 @@
 <!DOCTYPE html>
 <!-- Joshua Snyder -->
 <!-- MIU 1212 -->
-<!-- Project 3 -->
-<!DOCTYPE html> 
+<!-- Project 4 -->
+ 
 <html> 
-<head> 
-	<title>Recipes!</title> 
-	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<head> 
+		<title>Recipes!</title> 
+		<meta name="viewport" content="width=device-width, initial-scale=1"> 
 
-	<!-- Stylesheets -->
-	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.css" />
-	<link rel="stylesheet" href="css/style.css" />
+		<!-- Stylesheets -->
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.css" />
+		<link rel="stylesheet" href="css/style.css" />
 
-	<!-- Modernizr script -->
-	<!-- <script src="js/libs/modernizr.custom.min.js"></script> -->
+		<!-- Modernizr script -->
+		<!-- <script src="js/libs/modernizr.custom.min.js"></script> -->
 
-</head> 
-<body> 
+	</head> 
+	<body> 
 
-	<!-- Page -->
-	<div data-role="page" id="home">
+		<!-- Page -->
+		<div data-role="page" id="home">
 
-		<!-- Header -->
-		<div data-role="header" data-position="fixed" data-theme="b">
-			<h1>Recipes!</h1>
-		</div><!-- /header -->
-		
-		<!-- Content -->
-		<div data-role="content">
-			<div data-role="fieldcontain">
-				<label for="img-CTA">Need a Recipe Idea?</label>
-				<img src="img/clam_chowder_soup.jpg" id="img-CTA">
-			</div><!-- /CTA Image -->
+			<!-- Header -->
+			<div data-role="header" data-position="fixed" data-theme="b">
+				<h1>Recipes!</h1>
+			</div><!-- /header -->
+			
+			<!-- Content -->
+			<div data-role="content">
+				<div data-role="fieldcontain">
+					<label for="img-CTA">Need a Recipe Idea?</label>
+					<img src="img/clam_chowder_soup.jpg" id="img-CTA">
+				</div><!-- /CTA Image -->
 
-			<h3>Browse a Category:</h3>
-			<ul data-role="listview" data-inset="true" data-filter="true" data-theme="e">
-				<li><a href="#american">American</a></li>
-				<li><a href="#chinese">Chinese</a></li>
-				<li><a href="#italian">Italian</a></li>
-				<li><a href="#japanese">Japanese</a></li>
-				<li><a href="#mexican">Mexican</a></li>
-				<li><a href="#seasonal">Seasonal</a></li>
-			</ul><!-- Category Links -->
-		</div><!-- /content -->
+				<h3>Browse a Category:</h3>
+				<ul data-role="listview" data-inset="true" data-filter="true" data-theme="e">
+					<li><a href="#american">American</a></li>
+					<li><a href="#error404">Chinese</a></li>
+					<li><a href="#error404">Italian</a></li>
+					<li><a href="#error404">Japanese</a></li>
+					<li><a href="#error404">Mexican</a></li>
+					<li><a href="#error404">Seasonal</a></li>
+				</ul><!-- Category Links -->
+			</div><!-- /content -->
 
-		<div data-role="footer" data-position="fixed" data-theme="b" data-id="home">
-			<div data-role="navbar">
-				<ul>
-					<li><a href="#home" data-icon="home" class="ui-btn-active">Home</a></li>
-					<li><a href="additem.html" rel="external" data-icon="plus">Recipe</a></li>
-					<li><a href="#info" data-icon="info">Info</a></li>
+			<div data-role="footer" data-position="fixed" data-theme="b" data-id="home">
+				<div data-role="navbar">
+					<ul>
+						<li><a href="#home" data-icon="home" class="ui-btn-active">Home</a></li>
+						<li><a href="additem.html" rel="external" data-icon="plus">Recipe</a></li>
+						<li><a href="#info" data-icon="info">Info</a></li>
+					</ul>
+				</div><!-- /navbar -->
+			</div><!-- /footer -->
+
+		</div><!-- /page -->
+		</div>
+		<!-- /page -->
+
+		<div data-role="page" id="american" data-add-back-btn="true">
+			<div data-role="header" data-position="fixed" data-theme="b">
+				<h1>American</h1>
+			</div><!-- /header -->
+			<div data-role="content">
+				<div class="ui-grid-b">
+					<div class="ui-block-a"><img src="img/chicken_fried.jpg"></div>
+					<div class="ui-block-b"><img src="img/Chili_dog.jpg"></div>
+					<div class="ui-block-c"><img src="img/pot_roast.jpg"></div>
+					<div class="ui-block-a"><img src="img/steak.jpg"></div>
+					<div class="ui-block-b"><img src="img/chicken_strips.jpg"></div>
+				</div><!-- /grid-b -->
+			</div><!-- /content -->
+			<div data-role="footer" data-position="fixed" data-theme="b" data-id="home">
+				<div data-role="navbar">
+					<ul>
+						<li><a href="#home" data-icon="home">Home</a></li>
+						<li><a href="additem.html" data-rel="external" data-icon="plus">Recipe</a></li>
+						<li><a href="#info" data-icon="info">Info</a></li>
+				</div><!-- /navbar -->
+			</div><!-- /footer -->
+
+		</div><!-- /American category page -->
+
+		<div data-role="page" id="chinese" data-add-back-btn="true">
+			<div data-role="header" data-position="fixed" data-theme="b">
+				<h1>Chinese</h1>
+			</div><!-- /header -->
+			<div data-role="content">
+				<img src="img/Chinese.png"><p>Chinese Recipes live here</p>
+			</div><!-- /content -->
+			<div data-role="footer" data-position="fixed" data-theme="b" data-id="home">
+				<div data-role="navbar">
+					<ul>
+						<li><a href="#home" data-icon="home">Home</a></li>
+						<li><a href="additem.html" data-rel="external" data-icon="plus">Recipe</a></li>
+						<li><a href="#info" data-icon="info">Info</a></li>
+					</ul>
+				</div><!-- /navbar -->
+			</div><!-- /footer -->
+
+		</div><!-- /Chinese category page -->
+
+		<div data-role="page" id="italian" data-add-back-btn="true">
+			<div data-role="header" data-position="fixed" data-theme="b">
+				<h1>Italian</h1>
+			</div><!-- /header -->
+			<div data-role="content">
+				<img src="img/Italian.png"><p>Italian Recipes live here</p>
+			</div><!-- /content -->
+			<div data-role="footer" data-position="fixed" data-theme="b" data-id="home">
+				<div data-role="navbar">
+					<ul>
+						<li><a href="#home" data-icon="home">Home</a></li>
+						<li><a href="additem.html" data-rel="external" data-icon="plus">Recipe</a></li>
+						<li><a href="#info" data-icon="info">Info</a></li>
+					</ul>
+				</div><!-- /navbar -->
+			</div><!-- /footer -->
+
+		</div><!-- /Italian category page -->
+
+		<div data-role="page" id="japanese" data-add-back-btn="true">
+			<div data-role="header" data-position="fixed" data-theme="b">
+				<h1>Japanese</h1>
+			</div><!-- /header -->
+			<div data-role="content">
+				<img src="img/Japanese.png"><p>Japanese Recipes live here</p>
+			</div><!-- /content -->
+			<div data-role="footer" data-position="fixed" data-theme="b" data-id="home">
+				<div data-role="navbar">
+					<ul>
+						<li><a href="#home" data-icon="home">Home</a></li>
+						<li><a href="additem.html" data-rel="external" data-icon="plus">Recipe</a></li>
+						<li><a href="#info" data-icon="info">Info</a></li>
+					</ul>
+				</div><!-- /navbar -->
+			</div><!-- /footer -->
+
+		</div><!-- /Japanese category page -->
+
+		<div data-role="page" id="mexican" data-add-back-btn="true">
+			<div data-role="header" data-position="fixed" data-theme="b">
+				<h1>Mexican</h1>
+			</div><!-- /header -->
+			<div data-role="content">
+				<img src="img/Mexican.png"><p>Mexican Recipes live here</p>
+			</div><!-- /content -->
+			<div data-role="footer" data-position="fixed" data-theme="b" data-id="home">
+				<div data-role="navbar">
+					<ul>
+						<li><a href="#home" data-icon="home">Home</a></li>
+						<li><a href="additem.html" data-rel="external" data-icon="plus">Recipe</a></li>
+						<li><a href="#info" data-icon="info">Info</a></li>
+					</ul>
+				</div><!-- /navbar -->
+			</div><!-- /footer -->
+
+		</div><!-- /Mexican category page -->
+
+		<div data-role="page" id="seasonal" data-add-back-btn="true">
+			<div data-role="header" data-position="fixed" data-theme="b">
+				<h1>Seasonal</h1>
+			</div><!-- /header -->
+			<div data-role="content">
+				<img src="img/Seasonal.png"><p>Seasonal Recipes live here</p>
+			</div><!-- /content -->
+			<div data-role="footer" data-position="fixed" data-theme="b" data-id="home">
+				<div data-role="navbar">
+					<ul>
+						<li><a href="#home" data-icon="home">Home</a></li>
+						<li><a href="additem.html" data-rel="external" data-icon="plus">Recipe</a></li>
+						<li><a href="#info" data-icon="info">Info</a></li>
+					</ul>
+				</div><!-- /navbar -->
+			</div><!-- /footer -->
+
+		</div><!-- /Seasonal category page -->
+
+		<div data-role="page" id="info" data-add-back-btn="true">		
+			<div data-role="header" data-position="fixed" data-theme="b">
+				<h1>Info</h1>
+			</div><!-- /header -->
+			<div data-role="content">
+				<ul id="reqLinks">
+					<li><a href="https://github.com/JSnyder28/MIU.git">GitHub</a></li>
+					<li><a href="http://jsnyder28.github.com/MIU/Projects/snyder_joshua_project3/Gold/index.html">Gold App</a></li>
 				</ul>
-			</div><!-- /navbar -->
-		</div><!-- /footer -->
+			</div><!-- /content -->
+			<div data-role="footer" data-position="fixed" data-theme="b" data-id="home">
+				<div data-role="navbar">
+					<ul>
+						<li><a href="#home" data-icon="home">Home</a></li>
+						<li><a href="additem.html" data-rel="external" data-icon="plus">Recipe</a></li>
+						<li><a href="#info" data-icon="info" class="ui-btn-active">Info</a></li>
+					</ul>
+				</div><!-- /navbar -->
+			</div><!-- /footer -->
 
-	</div><!-- /page -->
-	</div>
-	<!-- /page -->
+		</div><!-- /Info page -->
 
-	<div data-role="page" id="american" data-add-back-btn="true">
-		<div data-role="header" data-position="fixed" data-theme="b">
-			<h1>American</h1>
-		</div><!-- /header -->
-		<div data-role="content">
-			<div class="ui-grid-b">
-				<div class="ui-block-a"><img src="img/chicken_fried.jpg"></div>
-				<div class="ui-block-b"><img src="img/Chili_dog.jpg"></div>
-				<div class="ui-block-c"><img src="img/pot_roast.jpg"></div>
-				<div class="ui-block-a"><img src="img/steak.jpg"></div>
-				<div class="ui-block-b"><img src="img/chicken_strips.jpg"></div>
-			</div><!-- /grid-b -->
-		</div><!-- /content -->
-		<div data-role="footer" data-position="fixed" data-theme="b" data-id="home">
-			<div data-role="navbar">
-				<ul>
-					<li><a href="#home" data-icon="home">Home</a></li>
-					<li><a href="additem.html" data-rel="external" data-icon="plus">Recipe</a></li>
-					<li><a href="#info" data-icon="info">Info</a></li>
-			</div><!-- /navbar -->
-		</div><!-- /footer -->
+		<div data-role="page" id="error404"><!-- error 404 Page -->
+			<div data-role="header" data-position="fixed" data-theme="b"><!-- header -->
+				<h1>Oops!</h1>
+			</div><!-- /header -->
+			<div data-role="content"><!-- content -->
+				<h1>Error: 404</h1>
+				<p>Sorry for the onconvenience. Our writers are experiencing some writers cramp.</p>
+				<p>Recipes will be added as soon as possible!</p>
+			</div><!-- /content -->
+			<div data-role="footer" data-position="fixed" data-theme="b" data-id="home"><!-- footer -->
+				<div data-role="navbar"><!-- navbar -->
+					<ul>
+						<li><a href="#home" data-icon="home">Home</a></li>
+						<li><a href="#addItem" data-icon="plus">Recipe</a></li>
+						<li><a href="#info" data-icon="info" class="ui-btn-active">Info</a></li>
+					</ul>
+				</div><!-- /navbar -->
+			</div><!-- /footer -->
+		</div><!-- /error404 page -->
 
-	</div><!-- /American category page -->
+		<!-- Javascript -->
+		<script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+		<script src="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>
+		<script src="js/json.js" type="text/javascript"></script>
+		<script src="js/main.js" type="text/javascript"></script>
 
-	<div data-role="page" id="chinese" data-add-back-btn="true">
-		<div data-role="header" data-position="fixed" data-theme="b">
-			<h1>Chinese</h1>
-		</div><!-- /header -->
-		<div data-role="content">
-			<img src="img/Chinese.png"><p>Chinese Recipes live here</p>
-		</div><!-- /content -->
-		<div data-role="footer" data-position="fixed" data-theme="b" data-id="home">
-			<div data-role="navbar">
-				<ul>
-					<li><a href="#home" data-icon="home">Home</a></li>
-					<li><a href="additem.html" data-rel="external" data-icon="plus">Recipe</a></li>
-					<li><a href="#info" data-icon="info">Info</a></li>
-				</ul>
-			</div><!-- /navbar -->
-		</div><!-- /footer -->
-
-	</div><!-- /Chinese category page -->
-
-	<div data-role="page" id="italian" data-add-back-btn="true">
-		<div data-role="header" data-position="fixed" data-theme="b">
-			<h1>Italian</h1>
-		</div><!-- /header -->
-		<div data-role="content">
-			<img src="img/Italian.png"><p>Italian Recipes live here</p>
-		</div><!-- /content -->
-		<div data-role="footer" data-position="fixed" data-theme="b" data-id="home">
-			<div data-role="navbar">
-				<ul>
-					<li><a href="#home" data-icon="home">Home</a></li>
-					<li><a href="additem.html" data-rel="external" data-icon="plus">Recipe</a></li>
-					<li><a href="#info" data-icon="info">Info</a></li>
-				</ul>
-			</div><!-- /navbar -->
-		</div><!-- /footer -->
-
-	</div><!-- /Italian category page -->
-
-	<div data-role="page" id="japanese" data-add-back-btn="true">
-		<div data-role="header" data-position="fixed" data-theme="b">
-			<h1>Japanese</h1>
-		</div><!-- /header -->
-		<div data-role="content">
-			<img src="img/Japanese.png"><p>Japanese Recipes live here</p>
-		</div><!-- /content -->
-		<div data-role="footer" data-position="fixed" data-theme="b" data-id="home">
-			<div data-role="navbar">
-				<ul>
-					<li><a href="#home" data-icon="home">Home</a></li>
-					<li><a href="additem.html" data-rel="external" data-icon="plus">Recipe</a></li>
-					<li><a href="#info" data-icon="info">Info</a></li>
-				</ul>
-			</div><!-- /navbar -->
-		</div><!-- /footer -->
-
-	</div><!-- /Japanese category page -->
-
-	<div data-role="page" id="mexican" data-add-back-btn="true">
-		<div data-role="header" data-position="fixed" data-theme="b">
-			<h1>Mexican</h1>
-		</div><!-- /header -->
-		<div data-role="content">
-			<img src="img/Mexican.png"><p>Mexican Recipes live here</p>
-		</div><!-- /content -->
-		<div data-role="footer" data-position="fixed" data-theme="b" data-id="home">
-			<div data-role="navbar">
-				<ul>
-					<li><a href="#home" data-icon="home">Home</a></li>
-					<li><a href="additem.html" data-rel="external" data-icon="plus">Recipe</a></li>
-					<li><a href="#info" data-icon="info">Info</a></li>
-				</ul>
-			</div><!-- /navbar -->
-		</div><!-- /footer -->
-
-	</div><!-- /Mexican category page -->
-
-	<div data-role="page" id="seasonal" data-add-back-btn="true">
-		<div data-role="header" data-position="fixed" data-theme="b">
-			<h1>Seasonal</h1>
-		</div><!-- /header -->
-		<div data-role="content">
-			<img src="img/Seasonal.png"><p>Seasonal Recipes live here</p>
-		</div><!-- /content -->
-		<div data-role="footer" data-position="fixed" data-theme="b" data-id="home">
-			<div data-role="navbar">
-				<ul>
-					<li><a href="#home" data-icon="home">Home</a></li>
-					<li><a href="additem.html" data-rel="external" data-icon="plus">Recipe</a></li>
-					<li><a href="#info" data-icon="info">Info</a></li>
-				</ul>
-			</div><!-- /navbar -->
-		</div><!-- /footer -->
-
-	</div><!-- /Seasonal category page -->
-
-	<div data-role="page" id="info" data-add-back-btn="true">		
-		<div data-role="header" data-position="fixed" data-theme="b">
-			<h1>Info</h1>
-		</div><!-- /header -->
-		<div data-role="content">
-			<ul id="reqLinks">
-				<li><a href="https://github.com/JSnyder28/MIU.git">GitHub</a></li>
-				<li><a href="http://jsnyder28.github.com/MIU/Projects/snyder_joshua_project3/Gold/index.html">Gold App</a></li>
-			</ul>
-		</div><!-- /content -->
-		<div data-role="footer" data-position="fixed" data-theme="b" data-id="home">
-			<div data-role="navbar">
-				<ul>
-					<li><a href="#home" data-icon="home">Home</a></li>
-					<li><a href="additem.html" data-rel="external" data-icon="plus">Recipe</a></li>
-					<li><a href="#info" data-icon="info" class="ui-btn-active">Info</a></li>
-				</ul>
-			</div><!-- /navbar -->
-		</div><!-- /footer -->
-
-	</div><!-- /Info page -->
-
-	<!-- Javascript -->
-	<script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
-	<script src="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>
-	<script src="js/json.js" type="text/javascript"></script>
-	<script src="js/main.js" type="text/javascript"></script>
-
-</body>
+	</body>
 </html>

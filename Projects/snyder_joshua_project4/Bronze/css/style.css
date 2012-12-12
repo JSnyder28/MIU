@@ -4,13 +4,9 @@ MIU 1212
 Project 1
 */
 
-/* html {
-    background-color: #F257AC;
-} */ /* Background for index.html and addItem.html pages */
 
-html {
-    background-image: url('gradient-purple.gif');
-    background-color: #cccccc
+#home {
+    background-image: url('gradient-purple.png');
 }
 
 h1 {
@@ -98,4 +94,5 @@ fieldset {
 #reqLinks {
     list-style-type: none;
 /* index.html page */
+
 
