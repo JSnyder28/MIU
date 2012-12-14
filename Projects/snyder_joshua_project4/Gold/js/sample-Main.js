@@ -2,7 +2,7 @@ $('#home').on('pageinit', function(){
 	//code needed for home page goes here
 });	
 		
-$('#addItem').on('pageinit', function(f){
+$('#addItem').on('pageinit', function(){
 
 		var myForm = $('#newRcpForm'),
 			formErrorLink = $('#errorsLink');
@@ -44,7 +44,6 @@ var getData = function(data){
 		/*$.each(data, function(i, field) {
 			$('#rcpDispPage').append(field.value + " ");
 		})*/
-
 };
 
 var storeData = function(data, key){
@@ -63,6 +62,12 @@ var	deleteItem = function(){
 					
 var clearLocal = function(){
 
+	localStorage.clear();
+	window.location.reload();
+	return false;
+
 };
 
+var clearLink = $('#clearAll');
+clearLink.click(clearLocal);
 /*$('#viewRcps').click(getData);*/

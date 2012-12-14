@@ -5,6 +5,10 @@ Project 4
 Gold app
 */
 
+#clearAll {
+	
+}
+
 #customHeaderDiv {
 	margin-bottom: -7px;
 }
@@ -18,7 +22,7 @@ Gold app
 	display: inline;
 }
 
-#customHeaderDiv > ul > li > a {
+#logoImg {
 	position: absolute;
 	top: 5px;
 	left: 5px;
