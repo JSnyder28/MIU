@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <!-- Joshua Snyder -->
 <!-- MIU 1212 -->
-<!-- Project 3 -->
+<!-- Project 4 -->
+<!-- Gold app -->
 
 <html>
 	<head> 
@@ -51,6 +52,7 @@
 					<ul>
 						<li><a href="#home" data-icon="home" class="ui-btn-active">Home</a></li>
 						<li><a href="#addItem" data-icon="plus">Recipe</a></li>
+						<li><a href="#error404" data-icon="grid" id="viewRcps">My Recipes</a></li>
 						<li><a href="#info" data-icon="info">Info</a></li>
 					</ul>
 				</div><!-- /navbar -->
@@ -77,7 +79,7 @@
 						<div id="select">
 							<label for="select-choice-1" class="select">Categories:</label>
 							<select name="select-choice-1" id="select-choice-1">
-								<option value="chooseCat">-- Choose A Category --</option>
+								<option value="" data-placeholder="true">-- Choose A Category --</option>
 								<option value="american">American</option>
 								<option value="chinese">Chinese</option>
 								<option value="italian">Italian</option>
@@ -88,23 +90,21 @@
 						</div><!-- /select -->
 						<div id="input-date">
 							<label for="date-added">Date Added:</label>
-							<input type="date" name="date" id="date-added" value="" />
+							<input type="date" name="date" id="date-added" value=""/>
 						</div><!-- /date -->
-						<div id="input-basicTxt">
+						<div id="input-basic-txt">
 							<label for="basicTxt">*Recipe Name:</label>
-							<input type="text" name="name" id="basicTxt" value="" class="required"/>
+							<input type="text" name="name" id="rcpName" value="" class="required"/>
 						</div><!-- /basic text input -->
-						<div id="txtArea-a">
+						<div id="txt-area-a">
 							<label for="txtArea-a">*Ingredients:</label>
-							<textarea name="textarea-ingredients" id="txtArea-a" class="required">
-							</textarea>
+							<textarea name="textarea-ingredients" id="txtArea-a" value="" class="required"></textarea>
 						</div><!-- /text area-a input -->
-						<div id="txtArea-b">
+						<div id="txt-area-b">
 							<label for="txtArea-b">*Directions:</label>
-							<textarea name="textarea-directions" id="txtArea-b" class="required">
-							</textarea>
+							<textarea name="textarea-directions" id="txtArea-b" class="required"></textarea>
 						</div><!-- /text area-b input -->
-						<div id="slider">
+						<div id="input-slider">
 							<label for="slider">Rate it:</label>
 							<input type="range" name="slider" id="slider" value="3" min="0" max="5" />
 						</div><!-- /slider -->
@@ -116,8 +116,8 @@
 							</fieldset>
 						</div><!-- /checkbox -->
 						<div id="button-submit">
-							<input type="submit" value="Add Recipe!" />
-							<input type="reset" value="Reset It!" data-theme="b" />
+							<input type="submit" value="Add It!" id="addIt" />
+							<input type="reset" value="Reset It!" id="resetIt" data-theme="b" />
 						</div><!-- / buttons -->
 						<!-- <a href="#errors" id="errorsLink" data-rel="dialog" data-transition="pop">open errors</a> -->
 					</fieldset>
@@ -130,6 +130,7 @@
 					<ul>
 						<li><a href="#home" data-icon="home">Home</a></li>
 						<li><a href="#addItem" data-icon="plus" class="ui-btn-active">Recipe</a></li>
+						<li><a href="#error404" data-icon="grid" id="viewRcps">My Recipes</a></li>
 						<li><a href="#info" data-icon="info">Info</a></li>
 					</ul>
 				</div><!-- /navbar -->
@@ -167,6 +168,7 @@
 					<ul>
 						<li><a href="#home" data-icon="home">Home</a></li>
 						<li><a href="#addItem" data-icon="plus">Recipe</a></li>
+						<li><a href="#error404" data-icon="grid" id="viewRcps">My Recipes</a></li>
 						<li><a href="#info" data-icon="info">Info</a></li>
 					</ul>
 				</div><!-- /navbar -->
@@ -191,6 +193,7 @@
 					<ul>
 						<li><a href="#home" data-icon="home">Home</a></li>
 						<li><a href="#addItem" data-icon="plus">Recipe</a></li>
+						<li><a href="#error404" data-icon="grid" id="viewRcps">My Recipes</a></li>
 						<li><a href="#info" data-icon="info">Info</a></li>
 				</div><!-- /navbar -->
 			</div><!-- /footer -->
@@ -214,6 +217,7 @@
 					<ul>
 						<li><a href="#home" data-icon="home">Home</a></li>
 						<li><a href="#addItem" data-icon="plus">Recipe</a></li>
+						<li><a href="#error404" data-icon="grid" id="viewRcps">My Recipes</a></li>
 						<li><a href="#info" data-icon="info">Info</a></li>
 					</ul>
 				</div><!-- /navbar -->
@@ -238,6 +242,7 @@
 					<ul>
 						<li><a href="#home" data-icon="home">Home</a></li>
 						<li><a href="#addItem" data-icon="plus">Recipe</a></li>
+						<li><a href="#error404" data-icon="grid" id="viewRcps">My Recipes</a></li>
 						<li><a href="#info" data-icon="info">Info</a></li>
 					</ul>
 				</div><!-- /navbar -->
@@ -262,6 +267,7 @@
 					<ul>
 						<li><a href="#home" data-icon="home">Home</a></li>
 						<li><a href="#addItem" data-icon="plus">Recipe</a></li>
+						<li><a href="#error404" data-icon="grid" id="viewRcps">My Recipes</a></li>
 						<li><a href="#info" data-icon="info">Info</a></li>
 					</ul>
 				</div><!-- /navbar -->
@@ -286,6 +292,7 @@
 					<ul>
 						<li><a href="#home" data-icon="home">Home</a></li>
 						<li><a href="#addItem" data-icon="plus">Recipe</a></li>
+						<li><a href="#error404" data-icon="grid" id="viewRcps">My Recipes</a></li>
 						<li><a href="#info" data-icon="info">Info</a></li>
 					</ul>
 				</div><!-- /navbar -->
@@ -313,12 +320,36 @@
 					<ul>					
 						<li><a href="#home" data-icon="home">Home</a></li>
 						<li><a href="#addItem" data-icon="plus">Recipe</a></li>
+						<li><a href="#error404" data-icon="grid" id="viewRcps">My Recipes</a></li>
 						<li><a href="#info" data-icon="info" class="ui-btn-active">Info</a></li>
 					</ul>
 				</div><!-- /navbar -->
 			</div><!-- /footer -->
 
 		</div><!-- /Info page -->
+
+		<div data-role="page" id="rcpDispPage" data-theme="a"><!-- display recipes page -->
+			<div data-role="header" data-position="fixed"><!-- header -->
+				<div class="ui-bar" id="customHeaderDiv">
+					<ul>
+						<li><a href="#home"><img src="img/RecipesLogo.png" id="logoImg"></a></li>
+						<li><h1>My Recipes!</h1></li>
+					</ul>
+				</div>
+			</div><!-- /header -->
+			<div data-role="content"><!-- content -->
+			</div><!-- /content -->
+			<div data-role="footer" data-position="fixed" data-id="home"><!-- footer -->
+				<div data-role="navbar"><!-- navbar -->
+					<ul>
+						<li><a href="#home" data-icon="home">Home</a></li>
+						<li><a href="#addItem" data-icon="plus">Recipe</a></li>
+						<li><a href="#error404" data-icon="grid" class="ui-btn-active" id="viewRcps">My Recipes</a></li>
+						<li><a href="#info" data-icon="info">Info</a></li>
+					</ul>
+				</div><!-- /navbar -->
+			</div><!-- /footer -->
+		</div><!-- /display recipes page -->
 
 		<div data-role="page" id="error404" data-theme="a"><!-- error 404 Page -->
 			<div data-role="header" data-position="fixed"><!-- header -->
@@ -330,7 +361,7 @@
 				</div><!-- /custom div -->
 			</div><!-- /header -->
 			<div data-role="content"><!-- content -->
-				<h1>Error: 404</h1>
+				<h1>404</h1>
 				<p>Sorry for the onconvenience. Our writers are experiencing some writers cramp.</p>
 				<p>Recipes will be added as soon as possible!</p>
 			</div><!-- /content -->
@@ -339,6 +370,7 @@
 					<ul>
 						<li><a href="#home" data-icon="home">Home</a></li>
 						<li><a href="#addItem" data-icon="plus">Recipe</a></li>
+						<li><a href="#error404" data-icon="grid" id="viewRcps">My Recipes</a></li>
 						<li><a href="#info" data-icon="info" class="ui-btn-active">Info</a></li>
 					</ul>
 				</div><!-- /navbar -->

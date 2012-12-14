@@ -1,7 +1,8 @@
 /*
 Joshua Snyder
 MIU 1212
-Project 3
+Project 4
+Gold app
 */
 
 #customHeaderDiv {
@@ -32,6 +33,26 @@ Project 3
 
 #customHeaderDiv > a {
 	margin-right: 300px;
+}
+
+#date-added {
+	background-color: white;
+	color: black;
+}
+
+#rcpName {
+	background-color: white;
+	color: black;
+}
+
+#txtArea-a {
+	background-color: white;
+	color: black;
+}
+
+#txtArea-b {
+	background-color: white;
+	color: black;
 }
 
 label.error {

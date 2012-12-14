@@ -12,7 +12,7 @@ var json = {
 		"cat": ["Category:", "American"],
 		"date": ["Date Added:", "2012-10-26"],
 		"rcpName": ["Recipe Name:", "Chicken Strips"],
-		"ingredients": ["Ingredients:", "Chicken Tenderloins, 1 cup flour, 1 cup milk, 1 egg, Salt and Pepper."]
+		"ingredients": ["Ingredients:", "Chicken Tenderloins, 1 cup flour, 1 cup milk, 1 egg, Salt and Pepper."],
 		"directions": ["Directions:", "Take 1 cup of flour, add 1 teaspoon of salt and 1 teaspoon of pepper, set aside. Combine 1 cup of milk with 1 egg, and mix in a bowl. Preheat 1/2 cup Vegetable Oil. Dredge one tenderloin in the milk mixture, then coat with flour. Place in frying pan and fry until golden brown. Repeat for each tenderloin strip."],
 		"favorite": ["Go-To-Meal?:", "Yes"],
 		"rating": ["Rating:", "3"]

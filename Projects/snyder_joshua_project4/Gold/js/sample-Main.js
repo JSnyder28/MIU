@@ -2,7 +2,7 @@ $('#home').on('pageinit', function(){
 	//code needed for home page goes here
 });	
 		
-$('#addItem').on('pageinit', function(){
+$('#addItem').on('pageinit', function(f){
 
 		var myForm = $('#newRcpForm'),
 			formErrorLink = $('#errorsLink');
@@ -21,33 +21,48 @@ $('#addItem').on('pageinit', function(){
 				$('#errors ul').html(html);*/
 			},
 			submitHandler: function() {
-		var data = myForm.serializeArray();
-			storeData(data);
-		}
-	});
+				var data = myForm.serializeArray();
+					storeData(data);
+					
+			}
+
+			});
 	
 	//any other code needed for addItem page goes here
-	
+
 });
 
 //The functions below can go inside or outside the pageinit function for the page in which it is needed.
 
-var autofillData = function (){
+var autofillData = function(){
+		/*$.each(json, function(i, field) {
+			$('#rcpDispPage').append(field.value + " ");
+		})*/
+};
+
+var getData = function(data){
+		/*$.each(data, function(i, field) {
+			$('#rcpDispPage').append(field.value + " ");
+		})*/
 
 };
 
-var getData = function(){
+var storeData = function(data, key){
+		if(!key) {
+			var id = Math.floor(Math.random()*100000001);
+		} else {
+			id = key;
+		}
 
-};
-
-var storeData = function(data){
-	
+	localStorage.setItem(id, JSON.stringify(data));
 }; 
 
-var	deleteItem = function (){
+var	deleteItem = function(){
 			
 };
 					
 var clearLocal = function(){
 
 };
+
+/*$('#viewRcps').click(getData);*/
